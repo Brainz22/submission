@@ -202,12 +202,33 @@ def getJobParams(mode, task_conf):
     if mode == 'NTP' or mode == 'L1IN' or mode == 'SIMDIGI' or mode == 'INFP' or mode == 'FP':
         input_files = []
         if not task_conf.crab:
-            if hasattr(task_conf, 'input_directory'):
+            if hasattr(task_conf, 'input_xrd_directory'):
+                print(('Reading input files from XRootD directory: {}'.format(task_conf.input_xrd_directory)))
+                # url format: root://xrootd.pic.es//pnfs/...
+                rest = task_conf.input_xrd_directory[7:]  # strip 'root://'
+                server_host, xrd_path = rest.split('//', 1)
+                xrd_path = '/' + xrd_path
+                xrd_ls = subprocess.check_output(['xrdfs', server_host, 'ls', '-R', xrd_path], universal_newlines=True)
+                input_files = ['root://' + server_host + '/' + f for f in xrd_ls.splitlines() if f.endswith('.root')]
+                print('  # of files found: {}'.format(len(input_files)))
+            elif hasattr(task_conf, 'input_directory'):
                 print(('Reading inpout files from directory: {}'.format(task_conf.input_directory)))
-                input_files = ['root://eoscms.cern.ch/'+os.path.join(task_conf.input_directory, file_name) for file_name in os.listdir(task_conf.input_directory) if file_name.endswith('.root')]
+                redirector = 'root://eosuser.cern.ch/' if task_conf.input_directory.startswith('/eos/user/') else 'root://eoscms.cern.ch/'
+                input_files = [redirector+os.path.join(task_conf.input_directory, file_name) for file_name in os.listdir(task_conf.input_directory) if file_name.endswith('.root')]
             elif hasattr(task_conf, 'input_dataset'):
-                print(('Reading inpout files from dataset: {}'.format(task_conf.input_dataset)))
-                input_files = getFilesForDataset(task_conf.input_dataset, site='T2_CH_CERN')
+                is_on_lxplus_eos = False #False data cannot be access via ls /eos/cms/...
+                if is_on_lxplus_eos:
+                    print(('Reading inpout files from dataset: {}'.format(task_conf.input_dataset)))
+                    input_files = getFilesForDataset(task_conf.input_dataset, site='T2_CH_CERN')
+                else:
+                    # To this (reads site from yaml):
+                    if hasattr(task_conf, 'site'):
+                        site = task_conf.site 
+                        #input_files = ['root://cms-xrd-global.cern.ch//' + f for f in getFilesForDataset(task_conf.input_dataset, site=site)]
+                        input_files = ['root://xrootd.pic.es//pnfs/pic.es/data/cms' + f for f in getFilesForDataset(task_conf.input_dataset, site=site)]
+                    elif not hasattr(task_conf, 'site'):
+                        print('ERROR: no site specified for input_dataset in task: {}'.format(task_conf.task_name))
+                        sys.exit(1)
             else:
                 print(('ERROR: no input specified for task: {}'.format(task_conf.task_name)))
                 sys.exit(1)
@@ -266,9 +287,12 @@ def getJobParams(mode, task_conf):
         if hasattr(task_conf, 'input_dataset'):
             params['TEMPL_INPUTDATASET'] = task_conf.input_dataset
         params['TEMPL_DATASETTAG'] = '{}_{}'.format(task_conf.task_name, task_conf.version)
-        params['TEMPL_CRABOUTDIR'] = task_conf.output_dir_base.split('/eos/cms')[1].replace('/cmst3/', '/group/cmst3/')
+        if task_conf.crab:
+            params['TEMPL_CRABOUTDIR'] = task_conf.output_dir_base.split('/eos/cms')[1].replace('/cmst3/', '/group/cmst3/')
         if hasattr(task_conf, 'inline_customize'):
             params['TEMPL_CUSTOMIZE'] = '\n'.join(task_conf.inline_customize)
+        else:
+            params['TEMPL_CUSTOMIZE'] = ''
 
         def get_from_env(variable):
             if variable in os.environ:

@@ -17,5 +17,7 @@ transfer_input_files  = TEMPL_TASKDIR/copy_files.sh,TEMPL_TASKDIR/conf/params.sh
 transfer_output_files   = ""
 
 # manifest = true
+use_x509userproxy = true
+x509userproxy = /afs/cern.ch/user/r/russelld/private/x509up
 
 queue TEMPL_NJOBS

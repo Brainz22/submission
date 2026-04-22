@@ -1,0 +1,29 @@
+# espresso     = 20 minutes
+# microcentury = 1 hour
+# longlunch    = 2 hours
+# workday      = 8 hours
+# tomorrow     = 1 day
+# testmatch    = 3 days
+# nextweek     = 1 week
+
+Common:
+  mode: FP
+  name: fp
+
+  tasks:
+    - HiddenGluGluH_mH125_Phi15_ctau1_bbbb_PU200
+
+  cmssw_config: ../FastPUPPI/NtupleProducer/python/runPerformanceNTuple.py
+  version: v151Xv1
+  output_dir_base: /eos/user/r/russelld/fp_ntuples
+  ncpu: 1
+  output_file_name: perfNano.root
+
+
+HiddenGluGluH_mH125_Phi15_ctau1_bbbb_PU200:
+  input_directory: /eos/user/r/russelld/fpinputs/HiddenGluGluH_mH125_Phi15_ctau1_bbbb_PU200/INFP/v151Xv1/
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1

@@ -1,0 +1,30 @@
+# espresso     = 20 minutes
+# microcentury = 1 hour
+# longlunch    = 2 hours
+# workday      = 8 hours
+# tomorrow     = 1 day
+# testmatch    = 3 days
+# nextweek     = 1 week
+
+Common:
+  mode: INFP
+  name: fpinputs
+
+  tasks:
+    - HiddenGluGluH_mH125_Phi30_ctau10_bbbb_PU200
+
+  cmssw_config: ../FastPUPPI/NtupleProducer/python/runInputs151X.py
+  version: v151Xv1
+  output_dir_base: /eos/user/r/russelld/fpinputs
+  ncpu: 1
+  output_file_name: inputs151X.root
+
+
+HiddenGluGluH_mH125_Phi30_ctau10_bbbb_PU200:
+  input_dataset: /HiddenGluGluH_mH-125_Phi-30_ctau-10_bbbb_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_Trk1GeV_140X_mcRun4_realistic_v4-v1/GEN-SIM-DIGI-RAW-MINIAOD
+  site: T1_ES_PIC_Disk
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
