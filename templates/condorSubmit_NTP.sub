@@ -1,0 +1,21 @@
+executable            = TEMPL_TASKDIR/conf/run.sh
+input                 = TEMPL_TASKDIR/conf/params.sh
+arguments             = $(ClusterID) $(ProcId)
+output                = TEMPL_TASKDIR/logs/job.$(ClusterId).$(ProcId).out
+error                 = TEMPL_TASKDIR/logs/job.$(ClusterId).$(ProcId).err
+log                   = TEMPL_TASKDIR/logs/condor.$(ClusterId).log
+
+RequestCpus = TEMPL_NCPU
+RequestMemory = 4000
+RequestDisk = 10000000
+requirements = (OpSysAndVer == "AlmaLinux8")
++SingularityImage = "/cvmfs/singularity.opensciencegrid.org/cmssw/cms:rhel8-x86_64"
++SingularityBindPath = "/cvmfs,/home/users"
+transfer_input_files  = TEMPL_TASKDIR/conf/params.sh,TEMPL_TASKBASEDIR/sandbox.tgz,TEMPL_TASKBASEDIR/cmssw_setup.sh,TEMPL_TASKDIR/conf/input_cfg.py,TEMPL_TASKDIR/conf/job_config_$(ProcId).py
+
+transfer_output_files   = ""
+
+use_x509userproxy = true
+x509userproxy = /tmp/x509up_u81911
+
+queue TEMPL_NJOBS

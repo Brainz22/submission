@@ -1,0 +1,18 @@
+Common:
+  mode: NTP
+  name: fp_ntuples
+  tasks:
+    - QCD_Pt15To3000_Flat_PU200
+  cmssw_config: ../FastPUPPI/NtupleProducer/python/runJetNTuple.py
+  version: v151Xv1
+  output_dir_base: /ceph/cms/store/group/LLPs/russelld/fp_ntuples
+  ncpu: 1
+  output_file_name: jetTuple.root
+
+QCD_Pt15To3000_Flat_PU200:
+  input_xrd_directory: root://eoscms.cern.ch//eos/cms/store/cmst3/group/l1tr/FastPUPPI/15_1_X/fpinputs_140X/v1/QCD_Pt-15To3000_TuneCP5_Flat_14TeV-pythia8/QCD_Pt15To3000_PU200_151Xv0/250919_143646/0000
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1

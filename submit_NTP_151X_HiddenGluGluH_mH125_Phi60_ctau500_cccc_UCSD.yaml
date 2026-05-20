@@ -1,0 +1,18 @@
+Common:
+  mode: NTP
+  name: fp_ntuples
+  tasks:
+    - HiddenGluGluH_mH125_Phi60_ctau500_cccc_PU200
+  cmssw_config: ../FastPUPPI/NtupleProducer/python/runJetNTuple.py
+  version: v151Xv1
+  output_dir_base: /ceph/cms/store/group/LLPs/russelld/fp_ntuples
+  ncpu: 1
+  output_file_name: jetTuple.root
+
+HiddenGluGluH_mH125_Phi60_ctau500_cccc_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH125_Phi60_ctau500_cccc_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1

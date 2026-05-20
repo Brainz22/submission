@@ -213,8 +213,13 @@ def getJobParams(mode, task_conf):
                 print('  # of files found: {}'.format(len(input_files)))
             elif hasattr(task_conf, 'input_directory'):
                 print(('Reading inpout files from directory: {}'.format(task_conf.input_directory)))
-                redirector = 'root://eosuser.cern.ch/' if task_conf.input_directory.startswith('/eos/user/') else 'root://eoscms.cern.ch/'
-                input_files = [redirector+os.path.join(task_conf.input_directory, file_name) for file_name in os.listdir(task_conf.input_directory) if file_name.endswith('.root')]
+                if task_conf.input_directory.startswith('/ceph'):
+                    input_files = ['file:' + os.path.join(task_conf.input_directory, f) for f in os.listdir(task_conf.input_directory) if f.endswith('.root')]
+                else:
+                    #redirector = 'root://eosuser.cern.ch/' if task_conf.input_directory.startswith('/eos/user/') else 'root://eoscms.cern.ch/'
+                    #input_files = [redirector+os.path.join(task_conf.input_directory, file_name) for file_name in os.listdir(task_conf.input_directory) if file_name.endswith('.root')]
+                    redirector = 'root://eosuser.cern.ch/' if task_conf.input_directory.startswith('/eos/user/') else 'root://eoscms.cern.ch/'
+                    input_files = [redirector + os.path.join(task_conf.input_directory, file_name) for file_name in os.listdir(task_conf.input_directory) if file_name.endswith('.root')]
             elif hasattr(task_conf, 'input_dataset'):
                 is_on_lxplus_eos = False #False data cannot be access via ls /eos/cms/...
                 if is_on_lxplus_eos:
@@ -224,8 +229,8 @@ def getJobParams(mode, task_conf):
                     # To this (reads site from yaml):
                     if hasattr(task_conf, 'site'):
                         site = task_conf.site 
-                        #input_files = ['root://cms-xrd-global.cern.ch//' + f for f in getFilesForDataset(task_conf.input_dataset, site=site)]
-                        input_files = ['root://xrootd.pic.es//pnfs/pic.es/data/cms' + f for f in getFilesForDataset(task_conf.input_dataset, site=site)]
+                        input_files = ['root://cms-xrd-global.cern.ch//' + f.lstrip('/') for f in getFilesForDataset(task_conf.input_dataset, site=site)]
+                        #input_files = ['root://xrootd.pic.es//pnfs/pic.es/data/cms' + f for f in getFilesForDataset(task_conf.input_dataset, site=site)]
                     elif not hasattr(task_conf, 'site'):
                         print('ERROR: no site specified for input_dataset in task: {}'.format(task_conf.task_name))
                         sys.exit(1)
@@ -438,6 +443,7 @@ def createTaskSetup(task_config, config_file):
     if not os.path.exists(task_config.output_dir):
         try:
             os.makedirs(task_config.output_dir)
+            os.chmod(task_config.output_dir, 0o777) #need to add write permissions here, equivalent to chmod 777 from CLI 
         except:
             print('   ERROR: output dir {} doesn\'t exist: please create it first!'.format(task_config.output_dir))
             print("Unexpected error:", sys.exc_info()[0])
