@@ -34,7 +34,7 @@ class SandboxTarball(object):
         # Note that dataDirs are only looked-for and added under the src/ folder.
         # /data/ subdirs contain data files needed by the code
         # /interface/ subdirs contain C++ header files needed e.g. by ROOT6
-        dataDirs = ['data', 'interface', 'python']
+        dataDirs = ['data', 'interface', 'python', 'TOoLLiP']
 
         # Tar up whole directories
         for directory in directories:
