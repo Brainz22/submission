@@ -15,13 +15,14 @@ Common:
 
   cmssw_config: ../FastPUPPI/NtupleProducer/python/runPerformanceNTuple.py
   version: v151Xv1
-  output_dir_base: /eos/user/r/russelld/fp_ntuples
+  #output_dir_base: /eos/user/r/russelld/fp_ntuples
+  output_dir_base: /ceph/cms/store/group/LLPs/russelld/perf_fp_ntuples
   ncpu: 1
   output_file_name: perfNano.root
 
 
 NuGunAllEta_PU200_151Xv0:
-  input_directory: /eos/cms/store/cmst3/group/l1tr/FastPUPPI/15_1_X/fpinputs_140X/v1/MinBias_TuneCP5_14TeV-pythia8/NuGunAllEta_PU200_151Xv0/250910_165617/0000/
+  input_xrd_directory: root://eoscms.cern.ch//eos/cms/store/cmst3/group/l1tr/FastPUPPI/15_1_X/fpinputs_140X/v1/MinBias_TuneCP5_14TeV-pythia8/NuGunAllEta_PU200_151Xv0/250910_165617/0000/
   crab: False
   splitting_mode: file_based
   splitting_granularity: 1

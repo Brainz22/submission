@@ -440,8 +440,8 @@ def createTaskSetup(task_config, config_file):
         os.mkdir(task_config.task_dir+'/conf/')
         os.mkdir(task_config.task_dir+'/logs/')
 
-    if not os.path.exists(task_config.output_dir):
-        try:
+    if not os.path.exists(task_config.output_dir): 
+        try: # Creates output_dir if it does not exist
             os.makedirs(task_config.output_dir)
             os.chmod(task_config.output_dir, 0o777) #need to add write permissions here, equivalent to chmod 777 from CLI 
         except:

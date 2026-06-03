@@ -1,0 +1,23 @@
+executable            = fp/v151Xv1/NuGunAllEta_PU200_151Xv0/conf/run.sh
+input                 = fp/v151Xv1/NuGunAllEta_PU200_151Xv0/conf/params.sh
+arguments             = $(ClusterID) $(ProcId)
+output                = fp/v151Xv1/NuGunAllEta_PU200_151Xv0/logs/job.$(ClusterId).$(ProcId).out
+error                 = fp/v151Xv1/NuGunAllEta_PU200_151Xv0/logs/job.$(ClusterId).$(ProcId).err
+log                   = fp/v151Xv1/NuGunAllEta_PU200_151Xv0/logs/condor.$(ClusterId).log
++JobFlavour           = "longlunch"
+
+RequestCpus = 1
+MY.WantOS = "el8"
+transfer_input_files  = fp/v151Xv1/NuGunAllEta_PU200_151Xv0/copy_files.sh,fp/v151Xv1/NuGunAllEta_PU200_151Xv0/conf/params.sh,fp/v151Xv1//sandbox.tgz,fp/v151Xv1//cmssw_setup.sh
+# +PreCmd               = "cmssw_setup.sh"
++PostCmd              = "copy_files.sh"
+
++AccountingGroup = "group_u_CMST3.all"
+
+transfer_output_files   = ""
+
+# manifest = true
+use_x509userproxy = true
+x509userproxy = /afs/cern.ch/user/r/russelld/private/x509up
+
+queue 379
