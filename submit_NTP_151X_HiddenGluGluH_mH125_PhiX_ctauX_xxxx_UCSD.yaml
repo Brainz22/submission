@@ -1,0 +1,522 @@
+Common:
+  mode: NTP
+  name: fp_ntuples
+  tasks:
+    - HiddenGluGluH_mH-125_Phi15_ctau1000_bbbb_PU200
+    - HiddenGluGluH_mH-125_Phi15_ctau1000_uuuu_PU200
+    - HiddenGluGluH_mH-125_Phi15_ctau100_bbbb_PU200
+    - HiddenGluGluH_mH-125_Phi15_ctau100_cccc_PU200
+    - HiddenGluGluH_mH-125_Phi30_ctau1000_bbbb_PU200
+    - HiddenGluGluH_mH-125_Phi30_ctau1000_uuuu_PU200
+    - HiddenGluGluH_mH-125_Phi30_ctau100_bbbb_PU200
+    - HiddenGluGluH_mH-125_Phi30_ctau100_cccc_PU200
+    - HiddenGluGluH_mH-125_Phi30_ctau100_uuuu_PU200
+    - HiddenGluGluH_mH-125_Phi30_ctau10_bbbb_PU200
+    - HiddenGluGluH_mH-125_Phi30_ctau500_bbbb_PU200
+    - HiddenGluGluH_mH-125_Phi30_ctau50_bbbb_PU200
+    - HiddenGluGluH_mH-125_Phi60_ctau1000_bbbb_PU200
+    - HiddenGluGluH_mH-125_Phi60_ctau100_bbbb_PU200
+    - HiddenGluGluH_mH-125_Phi60_ctau100_cccc_PU200
+    - HiddenGluGluH_mH-125_Phi60_ctau10_bbbb_PU200
+    - HiddenGluGluH_mH-125_Phi60_ctau1_cccc_PU200
+    - HiddenGluGluH_mH-125_Phi60_ctau500_bbbb
+    - HiddenGluGluH_mH-125_Phi60_ctau50_bbbb
+    - HiddenGluGluH_mH125_Phi15_ctau1_uuuu_PU200
+    - HiddenGluGluH_mH125_Phi15_ctau10_uuuu_PU200
+    - HiddenGluGluH_mH125_Phi15_ctau50_uuuu_PU200
+    - HiddenGluGluH_mH125_Phi15_ctau100_uuuu_PU200
+    - HiddenGluGluH_mH125_Phi15_ctau500_uuuu_PU200
+    - HiddenGluGluH_mH125_Phi15_ctau1000_uuuu_PU200
+    - HiddenGluGluH_mH125_Phi30_ctau1_uuuu_PU200
+    - HiddenGluGluH_mH125_Phi30_ctau10_uuuu_PU200
+    - HiddenGluGluH_mH125_Phi30_ctau50_uuuu_PU200
+    - HiddenGluGluH_mH125_Phi30_ctau500_uuuu_PU200
+    - HiddenGluGluH_mH125_Phi60_ctau1_uuuu_PU200
+    - HiddenGluGluH_mH125_Phi60_ctau10_uuuu_PU200
+    - HiddenGluGluH_mH125_Phi60_ctau50_uuuu_PU200
+    - HiddenGluGluH_mH125_Phi60_ctau100_uuuu_PU200
+    - HiddenGluGluH_mH125_Phi60_ctau500_uuuu_PU200
+    - HiddenGluGluH_mH125_Phi60_ctau1000_uuuu_PU200
+    - HiddenGluGluH_mH125_Phi15_ctau1_bbbb_PU200
+    - HiddenGluGluH_mH125_Phi15_ctau10_bbbb_PU200
+    - HiddenGluGluH_mH125_Phi15_ctau50_bbbb_PU200
+    - HiddenGluGluH_mH125_Phi15_ctau500_bbbb_PU200
+    - HiddenGluGluH_mH125_Phi30_ctau1_bbbb_PU200
+    - HiddenGluGluH_mH125_Phi30_ctau50_cccc_PU200
+    - HiddenGluGluH_mH125_Phi60_ctau1_bbbb_PU200
+    - HiddenGluGluH_mH125_Phi15_ctau1_cccc_PU200
+    - HiddenGluGluH_mH125_Phi15_ctau10_cccc_PU200
+    - HiddenGluGluH_mH125_Phi15_ctau50_cccc_PU200
+    - HiddenGluGluH_mH125_Phi15_ctau100_cccc_PU200
+    - HiddenGluGluH_mH125_Phi15_ctau500_cccc_PU200
+    - HiddenGluGluH_mH125_Phi15_ctau1000_cccc_PU200
+    - HiddenGluGluH_mH125_Phi30_ctau1_cccc_PU200
+    - HiddenGluGluH_mH125_Phi30_ctau10_cccc_PU200
+    - HiddenGluGluH_mH125_Phi30_ctau500_cccc_PU200
+    - HiddenGluGluH_mH125_Phi30_ctau1000_cccc_PU200
+    - HiddenGluGluH_mH125_Phi60_ctau10_cccc_PU200
+    - HiddenGluGluH_mH125_Phi60_ctau50_cccc_PU200
+    - HiddenGluGluH_mH125_Phi60_ctau500_cccc_PU200
+    - HiddenGluGluH_mH125_Phi60_ctau1000_cccc_PU200
+    - QCD_Pt15To3000_Flat_PU200
+  cmssw_config: ../FastPUPPI/NtupleProducer/python/runJetNTuple.py
+  version: v151Xv1
+  output_dir_base: /ceph/cms/store/group/LLPs/russelld/fp_ntuples
+  ncpu: 1
+  output_file_name: jetTuple.root
+
+HiddenGluGluH_mH-125_Phi15_ctau1000_bbbb_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH-125_Phi15_ctau1000_bbbb_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH-125_Phi15_ctau1000_uuuu_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH-125_Phi15_ctau1000_uuuu_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH-125_Phi15_ctau100_bbbb_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH-125_Phi15_ctau100_bbbb_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH-125_Phi15_ctau100_cccc_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH-125_Phi15_ctau100_cccc_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH-125_Phi30_ctau1000_bbbb_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH-125_Phi30_ctau1000_bbbb_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH-125_Phi30_ctau1000_uuuu_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH-125_Phi30_ctau1000_uuuu_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH-125_Phi30_ctau100_bbbb_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH-125_Phi30_ctau100_bbbb_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH-125_Phi30_ctau100_cccc_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH-125_Phi30_ctau100_cccc_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH-125_Phi30_ctau100_uuuu_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH-125_Phi30_ctau100_uuuu_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH-125_Phi30_ctau10_bbbb_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH-125_Phi30_ctau10_bbbb_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH-125_Phi30_ctau500_bbbb_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH-125_Phi30_ctau500_bbbb_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH-125_Phi30_ctau50_bbbb_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH-125_Phi30_ctau50_bbbb_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH-125_Phi60_ctau1000_bbbb_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH-125_Phi60_ctau1000_bbbb_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH-125_Phi60_ctau100_bbbb_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH-125_Phi60_ctau100_bbbb_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH-125_Phi60_ctau100_cccc_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH-125_Phi60_ctau100_cccc_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH-125_Phi60_ctau10_bbbb_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH-125_Phi60_ctau10_bbbb_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH-125_Phi60_ctau1_cccc_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH-125_Phi60_ctau1_cccc_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH-125_Phi60_ctau500_bbbb:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH-125_Phi60_ctau500_bbbb/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH-125_Phi60_ctau50_bbbb:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH-125_Phi60_ctau50_bbbb/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi15_ctau1_uuuu_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH125_Phi15_ctau1_uuuu_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi15_ctau10_uuuu_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH125_Phi15_ctau10_uuuu_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi15_ctau50_uuuu_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH125_Phi15_ctau50_uuuu_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi15_ctau100_uuuu_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH125_Phi15_ctau100_uuuu_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi15_ctau500_uuuu_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH125_Phi15_ctau500_uuuu_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi15_ctau1000_uuuu_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH125_Phi15_ctau1000_uuuu_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi30_ctau1_uuuu_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH125_Phi30_ctau1_uuuu_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi30_ctau10_uuuu_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH125_Phi30_ctau10_uuuu_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi30_ctau50_uuuu_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH125_Phi30_ctau50_uuuu_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi30_ctau500_uuuu_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH125_Phi30_ctau500_uuuu_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi60_ctau1_uuuu_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH125_Phi60_ctau1_uuuu_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi60_ctau10_uuuu_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH125_Phi60_ctau10_uuuu_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi60_ctau50_uuuu_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH125_Phi60_ctau50_uuuu_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi60_ctau100_uuuu_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH125_Phi60_ctau100_uuuu_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi60_ctau500_uuuu_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH125_Phi60_ctau500_uuuu_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi60_ctau1000_uuuu_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH125_Phi60_ctau1000_uuuu_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi15_ctau1_bbbb_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH125_Phi15_ctau1_bbbb_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi15_ctau10_bbbb_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH125_Phi15_ctau10_bbbb_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi15_ctau50_bbbb_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH125_Phi15_ctau50_bbbb_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi15_ctau500_bbbb_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH125_Phi15_ctau500_bbbb_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi30_ctau1_bbbb_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH125_Phi30_ctau1_bbbb_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi30_ctau50_cccc_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH125_Phi30_ctau50_cccc_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi60_ctau1_bbbb_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH125_Phi60_ctau1_bbbb_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi15_ctau1_cccc_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH125_Phi15_ctau1_cccc_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi15_ctau10_cccc_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH125_Phi15_ctau10_cccc_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi15_ctau50_cccc_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH125_Phi15_ctau50_cccc_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi15_ctau100_cccc_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH125_Phi15_ctau100_cccc_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi15_ctau500_cccc_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH125_Phi15_ctau500_cccc_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi15_ctau1000_cccc_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH125_Phi15_ctau1000_cccc_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi30_ctau1_cccc_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH125_Phi30_ctau1_cccc_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi30_ctau10_cccc_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH125_Phi30_ctau10_cccc_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi30_ctau500_cccc_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH125_Phi30_ctau500_cccc_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi30_ctau1000_cccc_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH125_Phi30_ctau1000_cccc_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi60_ctau10_cccc_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH125_Phi60_ctau10_cccc_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi60_ctau50_cccc_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH125_Phi60_ctau50_cccc_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi60_ctau500_cccc_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH125_Phi60_ctau500_cccc_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi60_ctau1000_cccc_PU200:
+  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH125_Phi60_ctau1000_cccc_PU200/INFP/v151Xv1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+QCD_Pt15To3000_Flat_PU200:
+  input_xrd_directory: root://eoscms.cern.ch//eos/cms/store/cmst3/group/l1tr/FastPUPPI/15_1_X/fpinputs_140X/v1/QCD_Pt-15To3000_TuneCP5_Flat_14TeV-pythia8/QCD_Pt15To3000_PU200_151Xv0/250919_143646/0000
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1

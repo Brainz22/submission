@@ -1,0 +1,560 @@
+Common:
+  mode: INFP
+  name: fpinputs
+  tasks:
+    - HiddenGluGluH_mH-125_Phi15_ctau1000_bbbb_PU200
+    - HiddenGluGluH_mH-125_Phi15_ctau1000_uuuu_PU200
+    - HiddenGluGluH_mH-125_Phi15_ctau100_bbbb_PU200
+    - HiddenGluGluH_mH-125_Phi15_ctau100_cccc_PU200
+    - HiddenGluGluH_mH-125_Phi30_ctau1000_bbbb_PU200
+    - HiddenGluGluH_mH-125_Phi30_ctau1000_uuuu_PU200
+    - HiddenGluGluH_mH-125_Phi30_ctau100_bbbb_PU200
+    - HiddenGluGluH_mH-125_Phi30_ctau100_cccc_PU200
+    - HiddenGluGluH_mH-125_Phi30_ctau100_uuuu_PU200
+    - HiddenGluGluH_mH-125_Phi30_ctau10_bbbb_PU200
+    - HiddenGluGluH_mH-125_Phi30_ctau500_bbbb_PU200
+    - HiddenGluGluH_mH-125_Phi30_ctau50_bbbb_PU200
+    - HiddenGluGluH_mH-125_Phi60_ctau1000_bbbb_PU200
+    - HiddenGluGluH_mH-125_Phi60_ctau100_bbbb_PU200
+    - HiddenGluGluH_mH-125_Phi60_ctau100_cccc_PU200
+    - HiddenGluGluH_mH-125_Phi60_ctau10_bbbb_PU200
+    - HiddenGluGluH_mH-125_Phi60_ctau1_cccc_PU200
+    - HiddenGluGluH_mH-125_Phi60_ctau500_bbbb
+    - HiddenGluGluH_mH-125_Phi60_ctau50_bbbb
+    - HiddenGluGluH_mH125_Phi15_ctau1_uuuu_PU200
+    - HiddenGluGluH_mH125_Phi15_ctau10_uuuu_PU200
+    - HiddenGluGluH_mH125_Phi15_ctau50_uuuu_PU200
+    - HiddenGluGluH_mH125_Phi15_ctau100_uuuu_PU200
+    - HiddenGluGluH_mH125_Phi15_ctau500_uuuu_PU200
+    - HiddenGluGluH_mH125_Phi15_ctau1000_uuuu_PU200
+    - HiddenGluGluH_mH125_Phi30_ctau1_uuuu_PU200
+    - HiddenGluGluH_mH125_Phi30_ctau10_uuuu_PU200
+    - HiddenGluGluH_mH125_Phi30_ctau50_uuuu_PU200
+    - HiddenGluGluH_mH125_Phi30_ctau500_uuuu_PU200
+    - HiddenGluGluH_mH125_Phi60_ctau1_uuuu_PU200
+    - HiddenGluGluH_mH125_Phi60_ctau10_uuuu_PU200
+    - HiddenGluGluH_mH125_Phi60_ctau50_uuuu_PU200
+    - HiddenGluGluH_mH125_Phi60_ctau100_uuuu_PU200
+    - HiddenGluGluH_mH125_Phi60_ctau500_uuuu_PU200
+    - HiddenGluGluH_mH125_Phi60_ctau1000_uuuu_PU200
+    - HiddenGluGluH_mH125_Phi15_ctau1_bbbb_PU200
+    - HiddenGluGluH_mH125_Phi15_ctau10_bbbb_PU200
+    - HiddenGluGluH_mH125_Phi15_ctau50_bbbb_PU200
+    - HiddenGluGluH_mH125_Phi15_ctau500_bbbb_PU200
+    - HiddenGluGluH_mH125_Phi30_ctau1_bbbb_PU200
+    - HiddenGluGluH_mH125_Phi30_ctau50_cccc_PU200
+    - HiddenGluGluH_mH125_Phi60_ctau1_bbbb_PU200
+    - HiddenGluGluH_mH125_Phi15_ctau1_cccc_PU200
+    - HiddenGluGluH_mH125_Phi15_ctau10_cccc_PU200
+    - HiddenGluGluH_mH125_Phi15_ctau50_cccc_PU200
+    - HiddenGluGluH_mH125_Phi15_ctau100_cccc_PU200
+    - HiddenGluGluH_mH125_Phi15_ctau500_cccc_PU200
+    - HiddenGluGluH_mH125_Phi15_ctau1000_cccc_PU200
+    - HiddenGluGluH_mH125_Phi30_ctau1_cccc_PU200
+    - HiddenGluGluH_mH125_Phi30_ctau10_cccc_PU200
+    - HiddenGluGluH_mH125_Phi30_ctau50_cccc_PU200
+    - HiddenGluGluH_mH125_Phi30_ctau500_cccc_PU200
+    - HiddenGluGluH_mH125_Phi30_ctau1000_cccc_PU200
+    - HiddenGluGluH_mH125_Phi60_ctau10_cccc_PU200
+    - HiddenGluGluH_mH125_Phi60_ctau50_cccc_PU200
+    - HiddenGluGluH_mH125_Phi60_ctau500_cccc_PU200
+    - HiddenGluGluH_mH125_Phi60_ctau1000_cccc_PU200
+  cmssw_config: ../FastPUPPI/NtupleProducer/python/runInputs151X.py
+  version: v151Xv1
+  output_dir_base: /ceph/cms/store/group/LLPs/russelld/fpinputs
+  ncpu: 1
+  output_file_name: inputs151X.root
+
+HiddenGluGluH_mH-125_Phi15_ctau1000_bbbb_PU200:
+  input_directory: /ceph/cms/store/mc/Phase2Spring24DIGIRECOMiniAOD/HiddenGluGluH_mH-125_Phi-15_ctau-1000_bbbb_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_Trk1GeV_140X_mcRun4_realistic_v6-v1/110000
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH-125_Phi15_ctau1000_uuuu_PU200:
+  input_directory: /ceph/cms/store/mc/Phase2Spring24DIGIRECOMiniAOD/HiddenGluGluH_mH-125_Phi-15_ctau-1000_uuuu_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_Trk1GeV_140X_mcRun4_realistic_v6-v1/2520000
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH-125_Phi15_ctau100_bbbb_PU200:
+  input_directory: /ceph/cms/store/mc/Phase2Spring24DIGIRECOMiniAOD/HiddenGluGluH_mH-125_Phi-15_ctau-100_bbbb_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_Trk1GeV_140X_mcRun4_realistic_v4-v1/2820000
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH-125_Phi15_ctau100_cccc_PU200:
+  input_directory: /ceph/cms/store/mc/Phase2Spring24DIGIRECOMiniAOD/HiddenGluGluH_mH-125_Phi-15_ctau-100_cccc_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_Trk1GeV_140X_mcRun4_realistic_v6-v1/2520000 
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH-125_Phi30_ctau1000_bbbb_PU200:
+  input_directory: /ceph/cms/store/mc/Phase2Spring24DIGIRECOMiniAOD/HiddenGluGluH_mH-125_Phi-30_ctau-1000_bbbb_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_Trk1GeV_140X_mcRun4_realistic_v4-v1/2810000
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH-125_Phi30_ctau1000_uuuu_PU200:
+  input_directory: /ceph/cms/store/mc/Phase2Spring24DIGIRECOMiniAOD/HiddenGluGluH_mH-125_Phi-30_ctau-1000_uuuu_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_Trk1GeV_140X_mcRun4_realistic_v6-v1/2810000
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH-125_Phi30_ctau100_bbbb_PU200:
+  input_directory: /ceph/cms/store/mc/Phase2Spring24DIGIRECOMiniAOD/HiddenGluGluH_mH-125_Phi-30_ctau-100_bbbb_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_Trk1GeV_140X_mcRun4_realistic_v4-v1/130000
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH-125_Phi30_ctau100_cccc_PU200:
+  input_directory: /ceph/cms/store/mc/Phase2Spring24DIGIRECOMiniAOD/HiddenGluGluH_mH-125_Phi-30_ctau-100_cccc_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_Trk1GeV_140X_mcRun4_realistic_v4-v1/2810000
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH-125_Phi30_ctau100_uuuu_PU200:
+  input_directory: /ceph/cms/store/mc/Phase2Spring24DIGIRECOMiniAOD/HiddenGluGluH_mH-125_Phi-30_ctau-100_uuuu_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_Trk1GeV_140X_mcRun4_realistic_v4-v1/2810000
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH-125_Phi30_ctau10_bbbb_PU200:
+  input_directory: /ceph/cms/store/mc/Phase2Spring24DIGIRECOMiniAOD/HiddenGluGluH_mH-125_Phi-30_ctau-10_bbbb_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_Trk1GeV_140X_mcRun4_realistic_v4-v1/2810000
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH-125_Phi30_ctau500_bbbb_PU200:
+  input_directory: /ceph/cms/store/mc/Phase2Spring24DIGIRECOMiniAOD/HiddenGluGluH_mH-125_Phi-30_ctau-500_bbbb_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_Trk1GeV_140X_mcRun4_realistic_v4-v1/2810000
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH-125_Phi30_ctau50_bbbb_PU200:
+  input_directory: /ceph/cms/store/mc/Phase2Spring24DIGIRECOMiniAOD/HiddenGluGluH_mH-125_Phi-30_ctau-50_bbbb_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_Trk1GeV_140X_mcRun4_realistic_v4-v1/2820000
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH-125_Phi60_ctau1000_bbbb_PU200:
+  input_directory: /ceph/cms/store/mc/Phase2Spring24DIGIRECOMiniAOD/HiddenGluGluH_mH-125_Phi-60_ctau-1000_bbbb_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_Trk1GeV_140X_mcRun4_realistic_v4-v2/2560000
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH-125_Phi60_ctau100_bbbb_PU200:
+  input_directory: /ceph/cms/store/mc/Phase2Spring24DIGIRECOMiniAOD/HiddenGluGluH_mH-125_Phi-60_ctau-100_bbbb_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_Trk1GeV_140X_mcRun4_realistic_v4-v1/1320000
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH-125_Phi60_ctau100_cccc_PU200:
+  input_directory: /ceph/cms/store/mc/Phase2Spring24DIGIRECOMiniAOD/HiddenGluGluH_mH-125_Phi-60_ctau-100_cccc_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_Trk1GeV_140X_mcRun4_realistic_v6-v1/100000
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH-125_Phi60_ctau10_bbbb_PU200:
+  input_directory: /ceph/cms/store/mc/Phase2Spring24DIGIRECOMiniAOD/HiddenGluGluH_mH-125_Phi-60_ctau-10_bbbb_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_Trk1GeV_140X_mcRun4_realistic_v4-v1/2810000
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH-125_Phi60_ctau1_cccc_PU200:
+  input_directory: /ceph/cms/store/mc/Phase2Spring24DIGIRECOMiniAOD/HiddenGluGluH_mH-125_Phi-60_ctau-1_cccc_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_Trk1GeV_140X_mcRun4_realistic_v6-v1/2520000
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH-125_Phi60_ctau500_bbbb:
+  input_directory: /ceph/cms/store/mc/Phase2Spring24DIGIRECOMiniAOD/HiddenGluGluH_mH-125_Phi-60_ctau-500_bbbb_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_Trk1GeV_140X_mcRun4_realistic_v4-v1/2810000
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH-125_Phi60_ctau50_bbbb:
+  input_directory: /ceph/cms/store/mc/Phase2Spring24DIGIRECOMiniAOD/HiddenGluGluH_mH-125_Phi-60_ctau-50_bbbb_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_Trk1GeV_140X_mcRun4_realistic_v4-v1/2820000
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi15_ctau1_uuuu_PU200:
+  input_dataset: /HiddenGluGluH_mH-125_Phi-15_ctau-1_uuuu_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_Trk1GeV_140X_mcRun4_realistic_v6-v1/GEN-SIM-DIGI-RAW-MINIAOD
+  site: T1_RU_JINR_Disk
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi15_ctau10_uuuu_PU200:
+  input_dataset: /HiddenGluGluH_mH-125_Phi-15_ctau-10_uuuu_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_Trk1GeV_140X_mcRun4_realistic_v6-v1/GEN-SIM-DIGI-RAW-MINIAOD
+  site: T2_IT_Rome
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi15_ctau50_uuuu_PU200:
+  input_dataset: /HiddenGluGluH_mH-125_Phi-15_ctau-50_uuuu_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_Trk1GeV_140X_mcRun4_realistic_v6-v1/GEN-SIM-DIGI-RAW-MINIAOD
+  site: T1_RU_JINR_Disk
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi15_ctau100_uuuu_PU200:
+  input_dataset: /HiddenGluGluH_mH-125_Phi-15_ctau-100_uuuu_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_Trk1GeV_140X_mcRun4_realistic_v6-v1/GEN-SIM-DIGI-RAW-MINIAOD
+  site: T2_ES_IFCA
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi15_ctau500_uuuu_PU200:
+  input_dataset: /HiddenGluGluH_mH-125_Phi-15_ctau-500_uuuu_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_Trk1GeV_140X_mcRun4_realistic_v6-v1/GEN-SIM-DIGI-RAW-MINIAOD
+  site: T2_EE_Estonia
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi15_ctau1000_uuuu_PU200:
+  input_dataset: /HiddenGluGluH_mH-125_Phi-15_ctau-1000_uuuu_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_Trk1GeV_140X_mcRun4_realistic_v6-v1/GEN-SIM-DIGI-RAW-MINIAOD
+  #site: T2_IT_Rome
+  site: T1_DE_KIT_Disk
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi30_ctau1_uuuu_PU200:
+  input_dataset: /HiddenGluGluH_mH-125_Phi-30_ctau-1_uuuu_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_Trk1GeV_140X_mcRun4_realistic_v6-v1/GEN-SIM-DIGI-RAW-MINIAOD
+  site: T1_RU_JINR_Disk
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi30_ctau10_uuuu_PU200:
+  input_dataset: /HiddenGluGluH_mH-125_Phi-30_ctau-10_uuuu_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_Trk1GeV_140X_mcRun4_realistic_v6-v1/GEN-SIM-DIGI-RAW-MINIAOD
+  site: T2_FR_IPHC
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi30_ctau50_uuuu_PU200:
+  input_dataset: /HiddenGluGluH_mH-125_Phi-30_ctau-50_uuuu_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_Trk1GeV_140X_mcRun4_realistic_v6-v1/GEN-SIM-DIGI-RAW-MINIAOD
+  site: T2_IT_Rome
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi30_ctau500_uuuu_PU200:
+  input_dataset: /HiddenGluGluH_mH-125_Phi-30_ctau-500_uuuu_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_Trk1GeV_140X_mcRun4_realistic_v6-v1/GEN-SIM-DIGI-RAW-MINIAOD
+  site: T2_CH_CSCS
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi60_ctau1_uuuu_PU200:
+  input_dataset: /HiddenGluGluH_mH-125_Phi-60_ctau-1_uuuu_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_Trk1GeV_140X_mcRun4_realistic_v6-v1/GEN-SIM-DIGI-RAW-MINIAOD
+  site: T2_IT_Rome
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi60_ctau10_uuuu_PU200:
+  input_dataset: /HiddenGluGluH_mH-125_Phi-60_ctau-10_uuuu_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_Trk1GeV_140X_mcRun4_realistic_v6-v1/GEN-SIM-DIGI-RAW-MINIAOD
+  site: T2_IT_Rome
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi60_ctau50_uuuu_PU200:
+  input_dataset: /HiddenGluGluH_mH-125_Phi-60_ctau-50_uuuu_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_Trk1GeV_140X_mcRun4_realistic_v6-v1/GEN-SIM-DIGI-RAW-MINIAOD
+  site: T2_ES_IFCA
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi60_ctau100_uuuu_PU200:
+  input_dataset: /HiddenGluGluH_mH-125_Phi-60_ctau-100_uuuu_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_Trk1GeV_140X_mcRun4_realistic_v6-v1/GEN-SIM-DIGI-RAW-MINIAOD
+  site: T1_RU_JINR_Disk
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi60_ctau500_uuuu_PU200:
+  input_dataset: /HiddenGluGluH_mH-125_Phi-60_ctau-500_uuuu_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_Trk1GeV_140X_mcRun4_realistic_v6-v1/GEN-SIM-DIGI-RAW-MINIAOD
+  site: T2_IT_Rome
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi60_ctau1000_uuuu_PU200:
+  input_dataset: /HiddenGluGluH_mH-125_Phi-60_ctau-1000_uuuu_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_Trk1GeV_140X_mcRun4_realistic_v6-v1/GEN-SIM-DIGI-RAW-MINIAOD
+  site: T2_IT_Rome
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi15_ctau1_bbbb_PU200:
+  input_dataset: /HiddenGluGluH_mH-125_Phi-15_ctau-1_bbbb_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_Trk1GeV_140X_mcRun4_realistic_v6-v1/GEN-SIM-DIGI-RAW-MINIAOD
+  site: T2_DE_DESY
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi15_ctau10_bbbb_PU200:
+  input_dataset: /HiddenGluGluH_mH-125_Phi-15_ctau-10_bbbb_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_Trk1GeV_140X_mcRun4_realistic_v6-v1/GEN-SIM-DIGI-RAW-MINIAOD
+  site: T2_EE_Estonia
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi15_ctau50_bbbb_PU200:
+  input_dataset: /HiddenGluGluH_mH-125_Phi-15_ctau-50_bbbb_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_Trk1GeV_140X_mcRun4_realistic_v6-v1/GEN-SIM-DIGI-RAW-MINIAOD
+  site: T2_IT_Legnaro
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi15_ctau500_bbbb_PU200:
+  input_dataset: /HiddenGluGluH_mH-125_Phi-15_ctau-500_bbbb_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_Trk1GeV_140X_mcRun4_realistic_v6-v1/GEN-SIM-DIGI-RAW-MINIAOD
+  site: T1_RU_JINR_Disk
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi30_ctau1_bbbb_PU200:
+  input_dataset: /HiddenGluGluH_mH-125_Phi-30_ctau-1_bbbb_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_Trk1GeV_140X_mcRun4_realistic_v6-v1/GEN-SIM-DIGI-RAW-MINIAOD
+  site: T2_EE_Estonia
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi30_ctau50_cccc_PU200:
+  input_dataset: /HiddenGluGluH_mH-125_Phi-30_ctau-50_cccc_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_Trk1GeV_140X_mcRun4_realistic_v6-v1/GEN-SIM-DIGI-RAW-MINIAOD
+  site: T2_IT_Rome
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi60_ctau1_bbbb_PU200:
+  input_dataset: /HiddenGluGluH_mH-125_Phi-60_ctau-1_bbbb_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_Trk1GeV_140X_mcRun4_realistic_v6-v1/GEN-SIM-DIGI-RAW-MINIAOD
+  site: T2_FR_IPHC
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi15_ctau1_cccc_PU200:
+  input_dataset: /HiddenGluGluH_mH-125_Phi-15_ctau-1_cccc_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_Trk1GeV_140X_mcRun4_realistic_v6-v1/GEN-SIM-DIGI-RAW-MINIAOD
+  site: T1_IT_CNAF_Disk
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi15_ctau10_cccc_PU200:
+  input_dataset: /HiddenGluGluH_mH-125_Phi-15_ctau-10_cccc_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_Trk1GeV_140X_mcRun4_realistic_v6-v1/GEN-SIM-DIGI-RAW-MINIAOD
+  site: T1_RU_JINR_Disk
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi15_ctau50_cccc_PU200:
+  input_dataset: /HiddenGluGluH_mH-125_Phi-15_ctau-50_cccc_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_Trk1GeV_140X_mcRun4_realistic_v6-v1/GEN-SIM-DIGI-RAW-MINIAOD
+  site: T2_ES_IFCA
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi15_ctau100_cccc_PU200:
+  input_dataset: /HiddenGluGluH_mH-125_Phi-15_ctau-100_cccc_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_Trk1GeV_140X_mcRun4_realistic_v6-v1/GEN-SIM-DIGI-RAW-MINIAOD
+  site: T2_IT_Legnaro
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi15_ctau500_cccc_PU200:
+  input_dataset: /HiddenGluGluH_mH-125_Phi-15_ctau-500_cccc_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_Trk1GeV_140X_mcRun4_realistic_v6-v1/GEN-SIM-DIGI-RAW-MINIAOD
+  site: T2_EE_Estonia
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi15_ctau1000_cccc_PU200:
+  input_dataset: /HiddenGluGluH_mH-125_Phi-15_ctau-1000_cccc_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_Trk1GeV_140X_mcRun4_realistic_v6-v1/GEN-SIM-DIGI-RAW-MINIAOD
+  site: T2_IT_Rome
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi30_ctau1_cccc_PU200:
+  input_dataset: /HiddenGluGluH_mH-125_Phi-30_ctau-1_cccc_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_Trk1GeV_140X_mcRun4_realistic_v6-v1/GEN-SIM-DIGI-RAW-MINIAOD
+  site: T2_FR_IPHC
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi30_ctau10_cccc_PU200:
+  input_xrd_directory: root://xrootd.pic.es//pnfs/pic.es/data/cms/store/mc/Phase2Spring24DIGIRECOMiniAOD/HiddenGluGluH_mH-125_Phi-30_ctau-10_cccc_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_Trk1GeV_140X_mcRun4_realistic_v6-v1
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi30_ctau50_cccc_PU200:
+  input_dataset: /HiddenGluGluH_mH-125_Phi-30_ctau-50_cccc_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_Trk1GeV_140X_mcRun4_realistic_v6-v1/GEN-SIM-DIGI-RAW-MINIAOD
+  site: T2_IT_Rome
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi30_ctau500_cccc_PU200:
+  input_dataset: /HiddenGluGluH_mH-125_Phi-30_ctau-500_cccc_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_Trk1GeV_140X_mcRun4_realistic_v6-v3/GEN-SIM-DIGI-RAW-MINIAOD
+  site: T2_DE_DESY
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi30_ctau1000_cccc_PU200:
+  input_dataset: /HiddenGluGluH_mH-125_Phi-30_ctau-1000_cccc_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_Trk1GeV_140X_mcRun4_realistic_v6-v1/GEN-SIM-DIGI-RAW-MINIAOD
+  site: T1_RU_JINR_Disk
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi60_ctau10_cccc_PU200:
+  input_dataset: /HiddenGluGluH_mH-125_Phi-60_ctau-10_cccc_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_Trk1GeV_140X_mcRun4_realistic_v6-v2/GEN-SIM-DIGI-RAW-MINIAOD
+  site: T1_FR_CCIN2P3_Disk
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi60_ctau50_cccc_PU200:
+  input_dataset: /HiddenGluGluH_mH-125_Phi-60_ctau-50_cccc_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_Trk1GeV_140X_mcRun4_realistic_v6-v2/GEN-SIM-DIGI-RAW-MINIAOD
+  site: T2_FR_IPHC
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi60_ctau500_cccc_PU200:
+  input_dataset: /HiddenGluGluH_mH-125_Phi-60_ctau-500_cccc_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_Trk1GeV_140X_mcRun4_realistic_v6-v1/GEN-SIM-DIGI-RAW-MINIAOD
+  site: T2_IT_Rome
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
+
+HiddenGluGluH_mH125_Phi60_ctau1000_cccc_PU200:
+  input_dataset: /HiddenGluGluH_mH-125_Phi-60_ctau-1000_cccc_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_Trk1GeV_140X_mcRun4_realistic_v6-v1/GEN-SIM-DIGI-RAW-MINIAOD
+  site: T2_BE_UCL
+  crab: False
+  splitting_mode: file_based
+  splitting_granularity: 1
+  job_flavor: longlunch
+  max_events: -1
