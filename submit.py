@@ -34,7 +34,7 @@ class SandboxTarball(object):
         # Note that dataDirs are only looked-for and added under the src/ folder.
         # /data/ subdirs contain data files needed by the code
         # /interface/ subdirs contain C++ header files needed e.g. by ROOT6
-        dataDirs = ['data', 'interface', 'python']
+        dataDirs = ['data', 'interface', 'python', 'TOoLLiP']
 
         # Tar up whole directories
         for directory in directories:
@@ -440,8 +440,8 @@ def createTaskSetup(task_config, config_file):
         os.mkdir(task_config.task_dir+'/conf/')
         os.mkdir(task_config.task_dir+'/logs/')
 
-    if not os.path.exists(task_config.output_dir):
-        try:
+    if not os.path.exists(task_config.output_dir): 
+        try: # Creates output_dir if it does not exist
             os.makedirs(task_config.output_dir)
             os.chmod(task_config.output_dir, 0o777) #need to add write permissions here, equivalent to chmod 777 from CLI 
         except:

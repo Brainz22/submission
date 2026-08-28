@@ -1,0 +1,17 @@
+JOBFLAVOR=longlunch
+NEVENTS=-1
+TASKBASEDIR=fp/v151Xv1/
+ABSTASKBASEDIR=/home/users/russelld/TOOLLIP_TESTS/cmssw-tests/pull-requesting/CMSSW_17_0_0_pre1/src/submission/fp/v151Xv1/
+TASKDIR=fp/v151Xv1/NuGunAllEta_PU200_151Xv0
+TASKCONFDIR=fp/v151Xv1/NuGunAllEta_PU200_151Xv0/conf
+ABSTASKCONFDIR=/home/users/russelld/TOOLLIP_TESTS/cmssw-tests/pull-requesting/CMSSW_17_0_0_pre1/src/submission/fp/v151Xv1/NuGunAllEta_PU200_151Xv0/conf
+OUTFILE=perfNano.root
+OUTDIR=/ceph/cms/store/group/LLPs/russelld/perf_fp_ntuples/NuGunAllEta_PU200_151Xv0/FP/v151Xv1
+NCPU=1
+SPLITGRANULARITY=1
+SPLITTINGMODE=file_based
+REQUESTNAME=NuGunAllEta_PU200_151Xv0
+DATASETTAG=NuGunAllEta_PU200_151Xv0_v151Xv1
+SCRAMARCH=el8_amd64_gcc13
+CMSSWBASE=/home/users/russelld/TOOLLIP_TESTS/cmssw-tests/pull-requesting/CMSSW_17_0_0_pre1
+CMSSWVERSION=CMSSW_17_0_0_pre1
