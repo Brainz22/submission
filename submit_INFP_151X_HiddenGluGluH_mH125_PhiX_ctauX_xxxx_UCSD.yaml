@@ -26,7 +26,6 @@ Common:
     - HiddenGluGluH_mH125_Phi15_ctau50_uuuu_PU200
     - HiddenGluGluH_mH125_Phi15_ctau100_uuuu_PU200
     - HiddenGluGluH_mH125_Phi15_ctau500_uuuu_PU200
-    - HiddenGluGluH_mH125_Phi15_ctau1000_uuuu_PU200
     - HiddenGluGluH_mH125_Phi30_ctau1_uuuu_PU200
     - HiddenGluGluH_mH125_Phi30_ctau10_uuuu_PU200
     - HiddenGluGluH_mH125_Phi30_ctau50_uuuu_PU200
@@ -47,7 +46,6 @@ Common:
     - HiddenGluGluH_mH125_Phi15_ctau1_cccc_PU200
     - HiddenGluGluH_mH125_Phi15_ctau10_cccc_PU200
     - HiddenGluGluH_mH125_Phi15_ctau50_cccc_PU200
-    - HiddenGluGluH_mH125_Phi15_ctau100_cccc_PU200
     - HiddenGluGluH_mH125_Phi15_ctau500_cccc_PU200
     - HiddenGluGluH_mH125_Phi15_ctau1000_cccc_PU200
     - HiddenGluGluH_mH125_Phi30_ctau1_cccc_PU200
@@ -262,16 +260,6 @@ HiddenGluGluH_mH125_Phi15_ctau500_uuuu_PU200:
   job_flavor: longlunch
   max_events: -1
 
-HiddenGluGluH_mH125_Phi15_ctau1000_uuuu_PU200:
-  input_dataset: /HiddenGluGluH_mH-125_Phi-15_ctau-1000_uuuu_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_Trk1GeV_140X_mcRun4_realistic_v6-v1/GEN-SIM-DIGI-RAW-MINIAOD
-  #site: T2_IT_Rome
-  site: T1_DE_KIT_Disk
-  crab: False
-  splitting_mode: file_based
-  splitting_granularity: 1
-  job_flavor: longlunch
-  max_events: -1
-
 HiddenGluGluH_mH125_Phi30_ctau1_uuuu_PU200:
   input_dataset: /HiddenGluGluH_mH-125_Phi-30_ctau-1_uuuu_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_Trk1GeV_140X_mcRun4_realistic_v6-v1/GEN-SIM-DIGI-RAW-MINIAOD
   site: T1_RU_JINR_Disk
@@ -446,15 +434,6 @@ HiddenGluGluH_mH125_Phi15_ctau10_cccc_PU200:
 HiddenGluGluH_mH125_Phi15_ctau50_cccc_PU200:
   input_dataset: /HiddenGluGluH_mH-125_Phi-15_ctau-50_cccc_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_Trk1GeV_140X_mcRun4_realistic_v6-v1/GEN-SIM-DIGI-RAW-MINIAOD
   site: T2_ES_IFCA
-  crab: False
-  splitting_mode: file_based
-  splitting_granularity: 1
-  job_flavor: longlunch
-  max_events: -1
-
-HiddenGluGluH_mH125_Phi15_ctau100_cccc_PU200:
-  input_dataset: /HiddenGluGluH_mH-125_Phi-15_ctau-100_cccc_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_Trk1GeV_140X_mcRun4_realistic_v6-v1/GEN-SIM-DIGI-RAW-MINIAOD
-  site: T2_IT_Legnaro
   crab: False
   splitting_mode: file_based
   splitting_granularity: 1

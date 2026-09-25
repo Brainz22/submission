@@ -26,7 +26,6 @@ Common:
     - HiddenGluGluH_mH125_Phi15_ctau50_uuuu_PU200
     - HiddenGluGluH_mH125_Phi15_ctau100_uuuu_PU200
     - HiddenGluGluH_mH125_Phi15_ctau500_uuuu_PU200
-    - HiddenGluGluH_mH125_Phi15_ctau1000_uuuu_PU200
     - HiddenGluGluH_mH125_Phi30_ctau1_uuuu_PU200
     - HiddenGluGluH_mH125_Phi30_ctau10_uuuu_PU200
     - HiddenGluGluH_mH125_Phi30_ctau50_uuuu_PU200
@@ -47,7 +46,6 @@ Common:
     - HiddenGluGluH_mH125_Phi15_ctau1_cccc_PU200
     - HiddenGluGluH_mH125_Phi15_ctau10_cccc_PU200
     - HiddenGluGluH_mH125_Phi15_ctau50_cccc_PU200
-    - HiddenGluGluH_mH125_Phi15_ctau100_cccc_PU200
     - HiddenGluGluH_mH125_Phi15_ctau500_cccc_PU200
     - HiddenGluGluH_mH125_Phi15_ctau1000_cccc_PU200
     - HiddenGluGluH_mH125_Phi30_ctau1_cccc_PU200
@@ -257,14 +255,6 @@ HiddenGluGluH_mH125_Phi15_ctau500_uuuu_PU200:
   job_flavor: longlunch
   max_events: -1
 
-HiddenGluGluH_mH125_Phi15_ctau1000_uuuu_PU200:
-  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH125_Phi15_ctau1000_uuuu_PU200/INFP/v151Xv1
-  crab: False
-  splitting_mode: file_based
-  splitting_granularity: 1
-  job_flavor: longlunch
-  max_events: -1
-
 HiddenGluGluH_mH125_Phi30_ctau1_uuuu_PU200:
   input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH125_Phi30_ctau1_uuuu_PU200/INFP/v151Xv1
   crab: False
@@ -419,14 +409,6 @@ HiddenGluGluH_mH125_Phi15_ctau10_cccc_PU200:
 
 HiddenGluGluH_mH125_Phi15_ctau50_cccc_PU200:
   input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH125_Phi15_ctau50_cccc_PU200/INFP/v151Xv1
-  crab: False
-  splitting_mode: file_based
-  splitting_granularity: 1
-  job_flavor: longlunch
-  max_events: -1
-
-HiddenGluGluH_mH125_Phi15_ctau100_cccc_PU200:
-  input_directory: /ceph/cms/store/group/LLPs/russelld/fpinputs/HiddenGluGluH_mH125_Phi15_ctau100_cccc_PU200/INFP/v151Xv1
   crab: False
   splitting_mode: file_based
   splitting_granularity: 1
